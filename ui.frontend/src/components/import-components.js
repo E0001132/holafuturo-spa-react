@@ -47,6 +47,12 @@ import {
     ListV2,ListV2IsEmptyFn
 } from '@adobe/aem-core-components-react-base';
 
+
+/**
+ * Internal custom component imports
+ */
+import Saludo from './Saludo/Saludo';
+
 //lazyload / code splitting example of an internal component
 const LazyTextComponent = withAsyncImport(() => import(`./Text/Text`));
 
@@ -75,6 +81,10 @@ MapTo('holafuturospa/components/accordion')(AccordionV1, {isEmpty: AccordionV1Is
 MapTo('holafuturospa/components/carousel')(CarouselV1, {isEmpty: CarouselV1IsEmptyFn});
 MapTo('holafuturospa/components/container')(ContainerV1, {isEmpty: ContainerV1IsEmptyFn});
 
+/**
+ * Internal custom component Mapping
+ */
+MapTo('holafuturospa/components/saludo')(Saludo);
 
 //lazy load of internal component (hello world)
 
