@@ -5,6 +5,9 @@ import { SaludoProps } from './types';
 // Componente base
 const SaludoComponent = (props: SaludoProps) => {
   // El fallback para el modo de edición (cuando no se han configurado props)
+
+    console.log('Componente saludo props', props);
+
   if (!props.titulo) {
     return <div className="cmp-saludo-placeholder">Por favor, edita el Saludo</div>;
   }
@@ -22,7 +25,7 @@ const SaludoComponent = (props: SaludoProps) => {
 const SaludoConfig = {
     emptyLabel: 'Saludo',
     isEmpty: (props: SaludoProps) => !props.titulo,
-    resourceType: 'holafuturo-spa-react/components/saludo' // Este debe coincidir con el paso 2
+    resourceType: 'holafuturospa/components/saludo' // Este debe coincidir con el paso 2
 };
 
 // Envuelve el componente con withEditable para habilitar la edición en AEM

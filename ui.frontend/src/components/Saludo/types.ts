@@ -4,4 +4,5 @@ import { ComponentProps } from "@adobe/aem-react-editable-components";
 export interface SaludoProps extends ComponentProps {
   titulo: string;
   descripcion: string;
+  saludo: string;
 }
