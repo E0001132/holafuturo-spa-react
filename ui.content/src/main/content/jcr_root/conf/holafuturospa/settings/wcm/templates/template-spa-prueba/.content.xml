@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    jcr:primaryType="cq:Template">
+    <jcr:content
+        cq:lastModified="{Date}2025-10-07T15:45:01.907-06:00"
+        cq:lastModifiedBy="admin"
+        cq:templateType="/conf/holafuturospa/settings/wcm/template-types/spa-page"
+        jcr:description="Template que va a servir para realizar pruebas para la migración de nuevos componentes con react."
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Template SPA Prueba"
+        status="enabled"/>
+</jcr:root>

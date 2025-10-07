@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
     jcr:primaryType="cq:Template">
     <jcr:content
         cq:created="{Date}2018-10-22T17:08:28.689+05:30"
         cq:createdBy="admin"
+        cq:lastModified="{Date}2025-10-07T13:14:55.247-06:00"
+        cq:lastModifiedBy="admin"
+        jcr:description="Hola Futuro SPA Project Page Template"
         jcr:primaryType="cq:PageContent"
-        jcr:description="Hola Futuro SPA React Project Page Template"
         jcr:title="SPA Page"
         status="enabled"/>
 </jcr:root>
