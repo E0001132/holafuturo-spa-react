@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    cq:icon="/content/dam/holafuturo/assets-v2---webp/desktop/home/header-principal/logo_holafuturo_header_desktop.webp"
+    cq:isContainer="{Boolean}true"
+    jcr:description="Componente que contiene la estructura del Header del sitio de"
+    jcr:primaryType="cq:Component"
+    jcr:title="Header del Sitio"
+    componentGroup="HolaFuturo - React (Prueba)"/>

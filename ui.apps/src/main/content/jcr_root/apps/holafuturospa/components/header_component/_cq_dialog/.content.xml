@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Configuración del componente"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[core.wcm.components.container.v1.editor]"
+    helpPath="/mnt/overlay/wcm/core/content/sites/components/details.html/apps/holafuturo/components/header_component"
+    trackingFeature="core-components:container:v1">
+    <content
+        granite:class="cmp-container__editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <icono_header
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Configuración del Icono Hola Futuro"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <pathField
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldDescription="Se va a mostrar el logo de hola futuro en el componente"
+                                fieldLabel="Selecciona el logo de &quot;Hola Futuro&quot;"
+                                name="./imagen_logo_header"
+                                rootPath="/content/dam"/>
+                            <pathfield_ruta
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldDescription="Se debe de colocar la ruta a donde se va a dirigir al presionar el logo del header"
+                                fieldLabel="Selecciona la ruta de la pagina a cargar."
+                                name="./ruta_seleccion_home"
+                                rootPath="/content"/>
+                            <pathfield_boton_resposive
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldDescription="Se va a mostrar el logo de hamburguesa (versión responsive)"
+                                fieldLabel="Selecciona el icono de hamburguesa"
+                                name="./imagen_hamburguesa_header"
+                                rootPath="/content/dam"/>
+                            <pathField-ico
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldDescription="Se va a mostrar la imagen ico del portal"
+                                fieldLabel="Selecciona la imagen ico de &quot;Hola Futuro&quot;"
+                                name="./imagen_ico_portal"
+                                rootPath="/content/dam"/>
+                            <pathField_opcion_2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldDescription="Se va a mostrar la imagen de la flecha de la opción 2 del header"
+                                fieldLabel="Selecciona la imagen de la flecha"
+                                name="./imagen_flecha_header"
+                                rootPath="/content/dam"/>
+                        </items>
+                    </icono_header>
+                    <nav_botones
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Menú de Navegación"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <titulo_boton_1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Texto que corresponde al botón 1"
+                                fieldLabel="Texto Botón 1"
+                                name="./texto_boton_1"/>
+                            <ruta_boton_1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldDescription="Se debe de colocar la ruta a donde se va a dirigir al presionar el botón"
+                                fieldLabel="Selecciona la ruta de la pagina a cargar."
+                                name="./ruta_seleccion_boton1"
+                                rootPath="/content"/>
+                            <titulo_boton_2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Texto que corresponde al botón 2"
+                                fieldLabel="Texto Botón 2"
+                                name="./texto_boton_2"/>
+                            <ruta_boton_2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldDescription="Se debe de colocar la ruta a donde se va a dirigir al presionar el botón"
+                                fieldLabel="Selecciona la ruta de la pagina a cargar."
+                                name="./ruta_seleccion_boton2"
+                                rootPath="/content"/>
+                            <titulo_boton_3
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Texto que corresponde al botón 3"
+                                fieldLabel="Texto Botón 3"
+                                name="./texto_boton_3"/>
+                            <ruta_boton_3
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldDescription="Se debe de colocar la ruta a donde se va a dirigir al presionar el botón"
+                                fieldLabel="Selecciona la ruta de la pagina a cargar."
+                                name="./ruta_seleccion_boton3"
+                                rootPath="/content"/>
+                            <titulo_boton_4
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Texto que corresponde al botón 4"
+                                fieldLabel="Texto Botón 4"
+                                name="./texto_boton_4"/>
+                            <ruta_boton_4
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldDescription="Se debe de colocar la ruta a donde se va a dirigir al presionar el botón"
+                                fieldLabel="Selecciona la ruta de la pagina a cargar."
+                                name="./ruta_seleccion_boton4"
+                                rootPath="/content"/>
+                        </items>
+                    </nav_botones>
+                    <dropdown_botones
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Dropdown"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <titulo_boton_dropmenu_1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Texto que corresponde al botón del dropmenu "
+                                fieldLabel="Titulo boton dropmenu 1"
+                                name="./texto_dropmenu_1"/>
+                            <ruta_dropmenu_1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldDescription="Se debe de colocar la ruta a donde se va a dirigir al presionar el botón"
+                                fieldLabel="Selecciona la ruta de la pagina a cargar."
+                                name="./ruta_dropmenu_1"
+                                rootPath="/content"/>
+                        </items>
+                    </dropdown_botones>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
