@@ -1,5 +1,7 @@
 import React from "react";
 import { MapTo, ComponentProps } from "@adobe/aem-react-editable-components";
+import "./header.css";
+
 
 export interface HeaderComponentProps extends ComponentProps {
   imagen_logo_header?: string;
@@ -25,7 +27,7 @@ export interface HeaderComponentProps extends ComponentProps {
   bloque_nivelproteccion_responsive?: any;
 }
 
-const HeaderComponent: React.FC<HeaderComponentProps> = (props) => {
+const Header: React.FC<HeaderComponentProps> = (props) => {
   const {
     imagen_logo_header,
     ruta_seleccion_home,
@@ -153,6 +155,6 @@ const HeaderComponent: React.FC<HeaderComponentProps> = (props) => {
 };
 
 // Mapeo del componente con AEM
-MapTo("holafuturo/components/header_component")(HeaderComponent);
+MapTo("holafuturospa/components/header")(Header);
 
-export default HeaderComponent;
+export default Header;
