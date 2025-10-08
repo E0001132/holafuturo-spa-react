@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Configuración del componente"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[core.wcm.components.container.v1.editor]"
+    helpPath="/mnt/overlay/wcm/core/content/sites/components/details.html/apps/holafuturo/components/footer"
+    trackingFeature="core-components:container:v1">
+    <content
+        granite:class="cmp-container__editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <bloque_1
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Iconos Profuturo"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <accordion_bloque1
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                                        variant="default">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <imagenes
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Imagenes (Desktop y Responsive)"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                maximized="{Boolean}true">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <logo_holafuturo_desktop
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldDescription="Coloca el logo de holaFuturo para su versión desktop"
+                                                        fieldLabel="Selecciona el Logo Principal de Hola Futuro (Desktop)"
+                                                        name="./logo_hola_futuro_footer_desktop"
+                                                        rootPath="/content/dam"/>
+                                                    <logo_holafuturo_responsive
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldDescription="Coloca el logo de holaFuturo para su versión responsive"
+                                                        fieldLabel="Selecciona el Logo Principal de Hola Futuro (Responsive)"
+                                                        name="./logo_hola_futuro_footer_responsive"
+                                                        rootPath="/content/dam"/>
+                                                    <logo_profuturo_desktop
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldDescription="Se coloca el logo de Profuturo para su versión desktop"
+                                                        fieldLabel="Logo de Profuturo (Desktop)"
+                                                        name="./logo_profuturo_footer_desktop"
+                                                        rootPath="/content/dam"/>
+                                                    <logo_profuturo_responsive
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldDescription="Se coloca el logo de Profuturo para su versión responsive"
+                                                        fieldLabel="Logo de Profuturo (Responsive)"
+                                                        name="./logo_profuturo_footer_responsive"
+                                                        rootPath="/content/dam"/>
+                                                </items>
+                                            </imagenes>
+                                            <enlaces
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Texto y Enlances"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                maximized="{Boolean}true">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <texto_descriptivo
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Se va a mostrar el texto colocado en el textfield para el primer bloque del footer"
+                                                        fieldLabel="Coloca el texto del bloque 1 del footer"
+                                                        name="./texto_bloque_1_logos"/>
+                                                    <rootPathField
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldDescription="Enlace que hace la redirección al sitio de home al presionar la imagen de holafuturo"
+                                                        fieldLabel="Selecciona la ruta al home"
+                                                        name="./ruta_home_footer"
+                                                        rootPath="/content"/>
+                                                </items>
+                                            </enlaces>
+                                        </items>
+                                    </accordion_bloque1>
+                                </items>
+                            </columns>
+                        </items>
+                    </bloque_1>
+                    <bloque_2
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Soluciones"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <titulo_principal_bloque
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Titulo que renombra como se va a llamar esa sección de links."
+                                fieldLabel="Titulo Principal del bloque"
+                                name="./titulo_bloque_opciones_1"/>
+                            <opciones_multifield
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fledLabel="Configuración de Opciones">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    margin="{Boolean}true"
+                                    name="./opciones_multifield">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <title_link_footer
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldDescription="Titulo que lleva el link de la opción dentro del bloque"
+                                            fieldLabel="Titulo del link"
+                                            name="./titlelink_1"/>
+                                        <rootpathfield_footer
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                            fieldDescription="Se debe de colocar la ruta de donde se quiere realizar la redirección."
+                                            fieldLabel="Coloca la ruta de redirección del producto."
+                                            name="./rootPathField_footer_1"
+                                            rootPath="/content"/>
+                                    </items>
+                                </field>
+                            </opciones_multifield>
+                        </items>
+                    </bloque_2>
+                    <bloque_3
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Legales"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <titulo_principal_bloque
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Titulo que renombra como se va a llamar esa sección de links."
+                                fieldLabel="Titulo Principal del bloque"
+                                name="./titulo_bloque_opciones_2"/>
+                            <legales_multifield
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fledLabel="Configuración de Opciones">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    margin="{Boolean}true"
+                                    name="./legales_multifield">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <title_link_footer
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldDescription="Titulo que lleva el link de la opción dentro del bloque"
+                                            fieldLabel="Titulo del link"
+                                            name="./titlelink_2"/>
+                                        <rootpathfield_footer
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                            fieldDescription="Se debe de colocar la ruta de donde se quiere realizar la redirección."
+                                            fieldLabel="Coloca la ruta de redirección del producto."
+                                            name="./rootPathField_footer_2"
+                                            rootPath="/content"/>
+                                    </items>
+                                </field>
+                            </legales_multifield>
+                        </items>
+                    </bloque_3>
+                    <bloque_4
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Ayuda"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <titulo_principal_bloque
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Titulo que renombra como se va a llamar esa sección de links."
+                                fieldLabel="Titulo Principal del bloque"
+                                name="./titulo_bloque_opciones_3"/>
+                            <ayuda_multifield
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fledLabel="Configuración de Opciones">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    margin="{Boolean}true"
+                                    name="./ayuda_multifield">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <title_link_footer
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldDescription="Titulo que lleva el link de la opción dentro del bloque"
+                                            fieldLabel="Titulo del link"
+                                            name="./titlelink_3"/>
+                                        <rootpathfield_footer
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                            fieldDescription="Se debe de colocar la ruta de donde se quiere realizar la redirección."
+                                            fieldLabel="Coloca la ruta de redirección del producto."
+                                            name="./rootPathField_footer_3"
+                                            rootPath="/content"/>
+                                    </items>
+                                </field>
+                            </ayuda_multifield>
+                        </items>
+                    </bloque_4>
+                    <bloque_5
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Redes Sociales"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <accordion_redes_sociales
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                                                variant="default">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <Facebook
+                                                        jcr:primaryType="nt:unstructured"
+                                                        jcr:title="Facebook"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                        maximized="{Boolean}true">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <logo_facebook_desktop
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                fieldDescription="Se coloca la imagen de facebook para su versión desktop"
+                                                                fieldLabel="Selecciona el logo de Facebook (Desktop)"
+                                                                name="./imagefacebook_footer_desktop"
+                                                                rootPath="/content/dam"/>
+                                                            <logo_facebook_responsive
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                fieldDescription="Se coloca la imagen de facebook para su versión responsive"
+                                                                fieldLabel="Selecciona el logo de Facebook (Responsive)"
+                                                                name="./imagefacebook_footer_responsive"
+                                                                rootPath="/content/dam"/>
+                                                            <rootPathField_facebook
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                fieldDescription="Ruta que redirige a la pagina de facebook del portal"
+                                                                fieldLabel="Ruta de Página de facebook de Hola Futuro"
+                                                                name="./rootPathfacebook"
+                                                                rootPath="/content"/>
+                                                        </items>
+                                                    </Facebook>
+                                                    <Instagram
+                                                        jcr:primaryType="nt:unstructured"
+                                                        jcr:title="Instagram"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                        maximized="{Boolean}true">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <logo_instagram_desktop
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                fieldDescription="Se coloca la imagen correspondiente de instagram par su versión desktop"
+                                                                fieldLabel="Selecciona el logo de Instagram (Desktop)"
+                                                                name="./imagePath_instagram_desktop"
+                                                                rootPath="/content/dam"/>
+                                                            <logo_instagram_responsive
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                fieldDescription="Se coloca la imagen correspondiente de instagram par su versión responsive"
+                                                                fieldLabel="Selecciona el logo de Instagram (Responsive)"
+                                                                name="./imagePath_instagram_responsive"
+                                                                rootPath="/content/dam"/>
+                                                            <rootPathField_instagram
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                fieldDescription="Ruta de la página a dirigir"
+                                                                fieldLabel="Ruta de Página"
+                                                                name="./rootPathInstagram"
+                                                                required="{Boolean}false"
+                                                                rootPath="/content"/>
+                                                        </items>
+                                                    </Instagram>
+                                                </items>
+                                            </accordion_redes_sociales>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </bloque_5>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
