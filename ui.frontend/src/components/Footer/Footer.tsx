@@ -2,9 +2,7 @@ import React from "react";
 import { MapTo, ComponentProps } from "@adobe/aem-react-editable-components";
 import "./footer.css";
 
-import React from "react";
-
-export interface FooterConfig {
+export interface FooterComponentProps extends ComponentProps {
   // Bloque 1
   logo_hola_futuro_footer_desktop?: string;
   logo_hola_futuro_footer_responsive?: string;
@@ -43,24 +41,50 @@ export interface FooterConfig {
   rootPathInstagram?: string;
 }
 
-export const Footer: React.FC<{ data: FooterConfig }> = ({ data }) => {
+const Footer: React.FC<FooterComponentProps> = (props) => {
+  const {
+    logo_hola_futuro_footer_desktop,
+    logo_hola_futuro_footer_responsive,
+    logo_profuturo_footer_desktop,
+    logo_profuturo_footer_responsive,
+    texto_bloque_1_logos,
+    ruta_home_footer,
+
+    titulo_bloque_opciones_1,
+    opciones_multifield,
+
+    titulo_bloque_opciones_2,
+    legales_multifield,
+
+    titulo_bloque_opciones_3,
+    ayuda_multifield,
+
+    imagefacebook_footer_desktop,
+    imagefacebook_footer_responsive,
+    rootPathfacebook,
+
+    imagePath_instagram_desktop,
+    imagePath_instagram_responsive,
+    rootPathInstagram,
+  } = props;
+
   return (
-    <footer className="cmp_footer">
+    <div className="cmp_footer">
       {/* --- Bloque Imagenes --- */}
       <div className="cmp_footer_bloque_links">
-        {data.ruta_home_footer && (
-          <a href={data.ruta_home_footer}>
-            {data.logo_hola_futuro_footer_desktop && (
+        {ruta_home_footer && (
+          <a href={ruta_home_footer}>
+            {logo_hola_futuro_footer_desktop && (
               <img
-                src={data.logo_hola_futuro_footer_desktop}
+                src={logo_hola_futuro_footer_desktop}
                 loading="lazy"
                 alt="logo_hola_futuro_desktop"
                 className="cmp_footer_hola_futuro_desktop"
               />
             )}
-            {data.logo_hola_futuro_footer_responsive && (
+            {logo_hola_futuro_footer_responsive && (
               <img
-                src={data.logo_hola_futuro_footer_responsive}
+                src={logo_hola_futuro_footer_responsive}
                 loading="lazy"
                 alt="logo_hola_futuro_responsive"
                 className="cmp_footer_hola_futuro_responsive"
@@ -69,21 +93,21 @@ export const Footer: React.FC<{ data: FooterConfig }> = ({ data }) => {
           </a>
         )}
 
-        {data.texto_bloque_1_logos && (
-          <p className="cmp_footer_parrafo">{data.texto_bloque_1_logos}</p>
+        {texto_bloque_1_logos && (
+          <p className="cmp_footer_parrafo">{texto_bloque_1_logos}</p>
         )}
 
-        {data.logo_profuturo_footer_desktop && (
+        {logo_profuturo_footer_desktop && (
           <img
-            src={data.logo_profuturo_footer_desktop}
+            src={logo_profuturo_footer_desktop}
             loading="lazy"
             alt="logo_profuturo_desktop"
             className="cmp_footer_profuturo_desktop"
           />
         )}
-        {data.logo_profuturo_footer_responsive && (
+        {logo_profuturo_footer_responsive && (
           <img
-            src={data.logo_profuturo_footer_responsive}
+            src={logo_profuturo_footer_responsive}
             loading="lazy"
             alt="logo_profuturo_responsive"
             className="cmp_footer_profuturo_responsive"
@@ -93,12 +117,12 @@ export const Footer: React.FC<{ data: FooterConfig }> = ({ data }) => {
 
       {/* --- Bloque Opciones --- */}
       <div className="cmp_footer_bloque_links">
-        {data.titulo_bloque_opciones_1 && (
+        {titulo_bloque_opciones_1 && (
           <h4 className="cmp_footer_titulo_bloque">
-            {data.titulo_bloque_opciones_1}
+            {titulo_bloque_opciones_1}
           </h4>
         )}
-        {data.opciones_multifield?.map((item, index) => (
+        {opciones_multifield?.map((item, index) => (
           <a
             key={index}
             href={item.rootPathField_footer_1}
@@ -111,12 +135,12 @@ export const Footer: React.FC<{ data: FooterConfig }> = ({ data }) => {
 
       {/* --- Bloque Legales --- */}
       <div className="cmp_footer_bloque_links">
-        {data.titulo_bloque_opciones_2 && (
+        {titulo_bloque_opciones_2 && (
           <h4 className="cmp_footer_titulo_bloque">
-            {data.titulo_bloque_opciones_2}
+            {titulo_bloque_opciones_2}
           </h4>
         )}
-        {data.legales_multifield?.map((item, index) => (
+        {legales_multifield?.map((item, index) => (
           <a
             key={index}
             href={item.rootPathField_footer_2}
@@ -129,12 +153,12 @@ export const Footer: React.FC<{ data: FooterConfig }> = ({ data }) => {
 
       {/* --- Bloque Ayuda --- */}
       <div className="cmp_footer_bloque_links">
-        {data.titulo_bloque_opciones_3 && (
+        {titulo_bloque_opciones_3 && (
           <h4 className="cmp_footer_titulo_bloque">
-            {data.titulo_bloque_opciones_3}
+            {titulo_bloque_opciones_3}
           </h4>
         )}
-        {data.ayuda_multifield?.map((item, index) => (
+        {ayuda_multifield?.map((item, index) => (
           <a
             key={index}
             href={item.rootPathField_footer_3}
@@ -147,19 +171,19 @@ export const Footer: React.FC<{ data: FooterConfig }> = ({ data }) => {
 
       {/* --- Bloque Redes Sociales --- */}
       <div className="cmp_footer_bloque_redes_sociales">
-        {data.rootPathfacebook && (
-          <a href={data.rootPathfacebook} target="_blank" rel="noreferrer">
-            {data.imagefacebook_footer_desktop && (
+        {rootPathfacebook && (
+          <a href={rootPathfacebook} target="_blank" rel="noreferrer">
+            {imagefacebook_footer_desktop && (
               <img
-                src={data.imagefacebook_footer_desktop}
+                src={imagefacebook_footer_desktop}
                 loading="lazy"
                 alt="logo_facebook_desktop"
                 className="cmp_footer_hola_futuro_face_desktop"
               />
             )}
-            {data.imagefacebook_footer_responsive && (
+            {imagefacebook_footer_responsive && (
               <img
-                src={data.imagefacebook_footer_responsive}
+                src={imagefacebook_footer_responsive}
                 loading="lazy"
                 alt="logo_facebook_responsive"
                 className="cmp_footer_hola_futuro_face_responsive"
@@ -168,19 +192,19 @@ export const Footer: React.FC<{ data: FooterConfig }> = ({ data }) => {
           </a>
         )}
 
-        {data.rootPathInstagram && (
-          <a href={data.rootPathInstagram} target="_blank" rel="noreferrer">
-            {data.imagePath_instagram_desktop && (
+        {rootPathInstagram && (
+          <a href={rootPathInstagram} target="_blank" rel="noreferrer">
+            {imagePath_instagram_desktop && (
               <img
-                src={data.imagePath_instagram_desktop}
+                src={imagePath_instagram_desktop}
                 loading="lazy"
                 alt="logo_instagram_desktop"
                 className="cmp_footer_hola_futuro_instagram_desktop"
               />
             )}
-            {data.imagePath_instagram_responsive && (
+            {imagePath_instagram_responsive && (
               <img
-                src={data.imagePath_instagram_responsive}
+                src={imagePath_instagram_responsive}
                 loading="lazy"
                 alt="logo_instagram_responsive"
                 className="cmp_footer_hola_futuro_instagram_responsive"
@@ -189,13 +213,11 @@ export const Footer: React.FC<{ data: FooterConfig }> = ({ data }) => {
           </a>
         )}
       </div>
-    </footer>
+    </div>
   );
 };
 
-
-
-// Mapeo del componente con AEM
+// 👇 Mapeo con el componente en AEM (ruta del componente en /apps)
 MapTo("holafuturospa/components/footer")(Footer);
 
 export default Footer;

@@ -137,8 +137,6 @@ const Header: React.FC<HeaderComponentProps> = (props) => {
         </div>
       </div>
 
-      <div className="header-placeholder"></div>
-
       {/* Subcomponentes (data-sly-resource) */}
       <div id="dropdownOpciones" className="header_dropdown_opciones">
         {bloque_nivelproteccion && bloque_nivelproteccion}
