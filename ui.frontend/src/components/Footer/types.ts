@@ -1,0 +1,1 @@
+import { ComponentProps } from "@adobe/aem-react-editable-components";

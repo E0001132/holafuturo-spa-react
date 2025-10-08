@@ -53,6 +53,7 @@ import {
  */
 import Saludo from './Saludo/Saludo';
 import Header from './Header/Header';
+import Footer from './Footer/Footer';
 
 //lazyload / code splitting example of an internal component
 const LazyTextComponent = withAsyncImport(() => import(`./Text/Text`));
@@ -87,6 +88,7 @@ MapTo('holafuturospa/components/container')(ContainerV1, {isEmpty: ContainerV1Is
  */
 MapTo('holafuturospa/components/saludo')(Saludo);
 MapTo('holafuturospa/components/header')(Header);
+MapTo('holafuturospa/components/footer')(Footer);
 
 //lazy load of internal component (hello world)
 
