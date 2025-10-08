@@ -1,0 +1,18 @@
+.cmp-input {
+  // Estilos base
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+
+  &__label {
+    // Estilos de un elemento interno
+    color: #007bff;
+    font-size: 1.5em;
+  }
+    &__input {
+    // Estilos de un elemento interno
+    color: red;
+    font-size: 1.5em;
+  }
+}
+

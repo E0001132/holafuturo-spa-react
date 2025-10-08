@@ -6,15 +6,15 @@ import { SaludoProps } from './types';
 const SaludoComponent = (props: SaludoProps) => {
   // El fallback para el modo de edición (cuando no se han configurado props)
 
-    console.log('Componente saludo props', props);
 
-  if (!props.titulo) {
+   console.log('Componente saludo props', props);
+  if (!props.saludo) {
     return <div className="cmp-saludo-placeholder">Por favor, edita el Saludo</div>;
   }
 
   return (
     <div className="cmp-saludo">
-      <h1 className="cmp-saludo__titulo">{props.titulo}</h1>
+      <h1 className="cmp-saludo__titulo">{props.saludo}</h1>
       <p className="cmp-saludo__descripcion">{props.descripcion}</p>
     </div>
   );
